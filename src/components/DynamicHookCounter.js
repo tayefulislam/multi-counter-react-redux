@@ -7,7 +7,7 @@ function DynamicHookCounter() {
     // redux hooks
     const count = useSelector((state) => state.dynamicCounter.value);
     const dispatch = useDispatch();
-    console.log(dispatch)
+    // console.log(dispatch)
 
 
     // handeler

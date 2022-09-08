@@ -6,8 +6,10 @@ function HookCounter() {
 
     // redux hooks
     const count = useSelector((state) => state.counter.value);
+
+
     const dispatch = useDispatch();
-    console.log(dispatch)
+    // console.log(dispatch)
 
 
     // handeler
@@ -26,13 +28,13 @@ function HookCounter() {
             <div className="flex space-x-3">
                 <button
                     className="bg-indigo-400 text-white px-3 py-2 rounded shadow"
-                    onClick={ incrementHandeler}
+                    onClick={incrementHandeler}
                 >
                     Increment
                 </button>
                 <button
                     className="bg-red-400 text-white px-3 py-2 rounded shadow"
-                    onClick={ decrementHandeler}
+                    onClick={decrementHandeler}
                 >
                     Decrement
                 </button>
